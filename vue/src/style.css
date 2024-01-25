@@ -1,0 +1,98 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* font */
+  --ff: sans-serif;
+  --fs: 1rem;
+  --fw-5: 500;
+  --fw-7: 700;
+  --fw-8: 800;
+  /* standard size for padding and margin */
+  --0_5: 0.5rem;
+  --1_5: 1.5rem;
+  --2_5: 2.5rem;
+  --1: 1rem;
+  --2: 2rem;
+  /* border-radius */
+  --br-5: 5px;
+  --br-10: 10px;
+  --br-20: 20px;
+  --br-50: 50%;
+  /* flex */
+  --flow-C: column;
+  --flow-R: row;
+  --justify-C: center;
+  --justify-E: flex-end;
+  --align-C: center;
+  --align-E: flex-end;
+  --flow: var(--flow, --flow-R);
+  --justify: var(--justify, flex-start);
+  --align: var(--align, flex-start);
+  /* dislpay */
+  --none: none;
+  --block: block;
+  --flex: flex;
+  --grid: grid;
+  --mobile-dis: var(--block);
+  --desktop-dis: var(--none);
+
+  line-height: 1.5;
+  /* color-scheme: dark light; */
+  font-family: var(--ff);
+}
+
+.active {
+  background-color: var(--bg-clr);
+  color: var(--clr);
+  border: var(--size) var(--style) var(--br-clr);
+}
+
+.flex {
+  display: var(--flex);
+  flex-flow: var(--flow);
+  justify-content: var(--justify);
+  align-items: var(--align);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: var(--fs);
+}
+
+a,
+button,
+span {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: var(--1);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.icons {
+  width: 1rem;
+}
